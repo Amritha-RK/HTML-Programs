@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+
+        li {
+            list-style-type: none;
+            padding-bottom: 10px;
+        }
+
+        form {
+            background-color: aqua;
+            height: 900px;
+            width: 900px;
+            border: 2px solid black;
+            border-style: dashed;
+        }
+
+        #high{
+            margin-left: 20px;
+        }
+
+        .margin{
+            margin-left: 92px;
+        }
+
+        .margin2{
+            margin-left: 140px;
+        }
+
+        .nxt{
+            margin-left: 65px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><u>Student Registration Form Using HTML Table</u></h1>
+    <form>
+        <ol>
+            <li>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="first name" maxlength="50">
+                (Max 50 characters allowed)
+            </li>
+
+            <li>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="last name" maxlength="50">
+                (Max 50 characters allowed)
+            </li>
+
+            <li>
+                <label for="email">E-Mail:</label>
+                <input type="text" id="email" name="E-mail">
+            </li>
+
+            <li>
+                <label for="number">Mobile Number:</label>
+                <input type="number" id="number" name="Mobile number" maxlength="10">
+                (10 digits Allowed)
+            </li>
+
+            <li>
+                <label>Gender:</label>
+
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gen">
+
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gen">
+
+                <label for="others">Others</label>
+                <input type="radio" id="others" name="gen">
+            </li>
+
+            <li>
+                <label for="date">Date of Birth:</label>
+                <input type="date" id="date" name="Date">
+            </li>
+
+            <li>
+                <label for="text">Address:</label>
+                <textarea id="text" name="Address" rows="10" cols="60"
+                    placeholder="Door number, street address, district">
+
+                </textarea>
+
+                </textarea>
+            </li>
+
+            <li>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="City" maxlength="50">
+                (Max 50 Characters Allowed)
+            </li>
+
+            <li>
+                <label for="pin">Pin. Code:</label>
+                <input type="number" id="pin" name="Pin code" maxlength="6">
+                (Max 6 characters Allowed)
+            </li>
+
+            <li>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="State" maxlength="6">
+                (Max 50 characters Allowed)
+            </li>
+
+            <li>
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="Country">
+            </li>
+
+            <li>
+                <label>Hobbies:</label>
+
+                <label for="draw">Drawing</label>
+                <input type="checkbox" id="draw" name="Drawing">
+
+                <label for="sing">Singing</label>
+                <input type="checkbox" id="sing" name="Singing">
+
+                <label for="dance">Dancing</label>
+                <input type="checkbox" id="dance" name="Dancing">
+
+                <label for="sketch">Sketching</label>
+                <input type="checkbox" id="sketch" name="Sketching"><br>
+
+                <label for="others" class="nxt">Others:</label>
+                <input type="text" id="others" name="Others">
+                (Max 50 Characters Allowed)
+
+            </li>
+
+            <li>
+
+                <label>Qualification:</label>
+
+                <label for="high">High School(10th)</label>
+                <input type="checkbox" id="high" name="High School"><br>
+
+                <label for="sec" class="margin">Higher Secondary(12th)</label>
+                <input type="checkbox" id="sec" name="Secondary"><br>
+
+                <label for="ug" class="margin">Graduation</label>
+                <input type="checkbox" id="ug" name="Under Gratuate"><br>
+
+                <label for="pg" class="margin">Post Graduation(PG)</label>
+                <input type="checkbox" id="pg" name="post graduation"><br>
+
+                <label for="phd" class="margin">Doctrate(PhD)</label>
+                <input type="checkbox" id="phd" name="phd">
+            </li>
+
+            <li>
+                <label>Courses Applied For:</label>
+
+                <label for="ba">B.A</label>
+                <input type="checkbox" id="ba" name="B.A"><br>
+
+                <label for="bcom" class="margin2">B.Com</label>
+                <input type="checkbox" id="bcom" name="bcom"><br>
+
+                <label for="bsc" class="margin2">B.sc</label>
+                <input type="checkbox" id="bsc" name="B.Sc"><br>
+
+                <label for="ma" class="margin2">M.A</label>
+                <input type="checkbox" id="ma" name="M.A">
+            </li>
+
+            <li>
+                <input type="submit">
+
+                <input type="reset">
+            </li>
+
+        </ol>
+    </form>
+</body>
+
+</html>

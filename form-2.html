@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attributes</title>
+    <style>
+        ol li {
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="index.html" target="_blank" method="post" autocomplete="off" novalidate>
+            <h1>Form Elements</h1>
+
+            <ol>
+                <li><label for="finame">First Name:</label>
+                    <input type="text" id="finame" name="FirstName">
+                </li>
+
+                <li>
+                    <label for="coun">Choose the Country:</label>
+                    <select id="coun" name="Country" size="5">
+                        <option value="India">India</option>
+                        <option value="America">America</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Italy" selected>Italy</option>
+                        <option value="England">England</option>
+                        <option value="Japan">Japan</option>
+                        <option value="France">France</option>
+                    </select>
+                </li>
+
+                <li>
+                    <textarea placeholder="Comments"> </textarea>
+                </li>
+
+                <li>
+                    <button type="button" onclick="alert('hai')">Click</button>
+                </li>
+
+                <li>
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <ol>
+                            <li>
+                                <label for="fname">First Name:</label>
+                                <input type="text" id="fname" name="FirstName">
+
+                                <label for="lname">Last Name:</label>
+                                <input type="text" id="lname" name="LastName">
+                            </li>
+
+                            <li>
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="E-mail">
+                            </li>
+
+                            <li>
+                                <label>Gender:</label>
+
+                                <label for="male">Male</label>
+                                <input type="radio" id="male" name="gender">
+
+                                <label for="female">Female</label>
+                                <input type="radio" id="Female" name="gender" title="female">
+
+                            </li>
+
+                            <li>
+                                <label for="pass">Password:</label>
+                                <input type="password" id="pass" name="password" placeholder="example">
+                            </li>
+
+                            <li>
+                                <label for="num">Height:</label>
+                                <input type="number" id="num" name="Height">
+                            </li>
+                        </ol>
+                    </fieldset>
+                </li>
+
+                <li>
+                    <label>Choose the Course</label>
+
+                    <input list="course" title="courses">
+                    <datalist id="course" name="course">
+                        <option value="HTML"></option>
+                        <option value="CSS"></option>
+                        <option value="JS"></option>
+                        <option value="Python"></option>
+                        <option value="SQL"></option>
+                        <option value="PHP"></option>
+                        <option value="React"></option>
+                    </datalist>
+                </li>
+
+                <li>
+                    <label for="food">Choose your order:</label>
+
+                    <select id="food" name="Food">
+
+                        <optgroup label="South Indian">
+                            <option value="Idli">Idli</option>
+                            <option value="Dosa">Dosa</option>
+                            <option value="Pongal">Pongal</option>
+                            <option value="Vada">Vada</option>
+                        </optgroup>
+
+                        <optgroup label="North Indian">
+                            <option value="poori">Poori</option>
+                            <option value="Daal">Daal</option>
+                            <option value="Chapathi">Chapathi</option>
+                            <option value="Naan">Naan</option>
+                        </optgroup>
+
+                        <optgroup label="Continental">
+                            <option value="Noodles">Noodles</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Burger">Burger</option>
+                            <option value="Pizza">Pizza</option>
+                        </optgroup>
+                    </select>
+                </li>
+
+
+                <input type="submit">
+
+            </ol>
+        </form>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Document2</title>
+    <style>
+        #full-form {
+            border: 2px solid black;
+            height: 800px;
+            width: 1000px;
+        }
+
+        #header {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 100px;
+            background-color: rgb(167, 84, 132);
+            height: 100px;
+            width: 1000px;
+            padding-top: 20px;
+        }
+
+        #nav {
+            background-color: gray;
+            height: 600px;
+            width: 300px;
+            float: left;
+        }
+
+        #content {
+            background-color: rgb(86, 153, 86);
+            height: 600px;
+            width: 700px;
+            float: left;
+
+        }
+
+        form {
+            border: 3px solid black;
+            text-align: center;
+            height: 200px;
+            width: 400px;
+            padding: 5px;
+        }
+
+        ol {
+            list-style-type: none;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        li {
+            padding-bottom: 5px;
+        }
+
+        #footer {
+            background-color: grey;
+            height: 60px;
+            width: 1000px;
+            text-align: center;
+            clear: left;
+            padding-top: 20px;
+        }
+
+        label{
+            width: 100px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div id="full-form">
+
+        <div id="header">Assignment </div>
+
+        <div id="section">
+            <div id="nav">
+                <ol>
+                    <li>Home</li>
+                    <li>Mad Libs</li>
+                    <li>Tom Thomb</li>
+                </ol>
+            </div>
+
+            <div id="content">
+                <form>
+                    <ol>
+                        <h2>Mad Libs</h2>
+                        <li>
+                            <label for="name">Person Name:</label>
+                            <input type="text" id="name" name="person-name">
+                        </li>
+
+                        <li>
+                            <label for="char">Character:</label>
+                            <input type="text" id="car" name="character">
+                        </li>
+
+                        <li>
+                            <label for="averb">Adverb:</label>
+                            <input type="text" id="averb" name="adverb">
+                        </li>
+
+                        <li>
+                            <label for="adject">Adjective:</label>
+                            <input type="text" id="adject" name="adjective">
+                        </li>
+
+                        <li>
+                            <input type="submit" value="Tell Story">
+                        </li>
+                    </ol>
+                </form>
+            </div>
+        </div>
+
+        <div id="footer">HTML & CSS</div>
+
+    </div>
+
+</body>
+
+</html>

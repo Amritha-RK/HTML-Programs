@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query task-2</title>
+
+    <style>
+        #box {
+            height: 500px;
+            width: 900px;
+            border: 5px solid black;
+            padding: 5px;
+        }
+
+        #header {
+            height: 50px;
+            width: 900px;
+            float: left;
+        }
+
+        .left-head {
+            height: 50px;
+            width: 295px;
+            background-color: skyblue;
+            float: left;
+            margin-right: 5px;
+        }
+
+        .right-head {
+            height: 50px;
+            width: 600px;
+            background-color: gold;
+            float: left;
+        }
+
+        #middle {
+            height: 340px;
+            width: 900px;
+            background-color: tomato;
+            float: left;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #footer {
+            height: 100px;
+            width: 900px;
+            float: left;
+        }
+
+        .foot-one {
+            height: 100px;
+            width: 295px;
+            background-color: gold;
+            margin-right: 5px;
+            float: left;
+        }
+
+        .foot-two {
+            height: 100px;
+            width: 295px;
+            background-color: gold;
+            margin-right: 5px;
+            float: left;
+        }
+
+        .foot-three {
+            height: 100px;
+            width: 300px;
+            background-color: gold;
+            float: left;
+        }
+
+
+        @media only screen and (max-width:600px) {
+            #box {
+                height: 500px;
+                width: 600px;
+                border: 5px solid black;
+                padding: 5px;
+            }
+
+            #header {
+                height: 50px;
+                width: 600px;
+                float: left;
+            }
+
+            .left-head {
+                height: 50px;
+                width: 195px;
+                background-color: skyblue;
+                float: left;
+                margin-right: 5px;
+            }
+
+            .right-head {
+                height: 50px;
+                width: 400px;
+                background-color: gold;
+                float: left;
+            }
+
+            #middle {
+                height: 300px;
+                width: 600px;
+                background-color: tomato;
+                float: left;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            #footer {
+                height: 100px;
+                width: 600px;
+                float: left;
+            }
+
+            .foot-one {
+                height: 100px;
+                width: 195px;
+                background-color: gold;
+                margin-right: 5px;
+                float: left;
+            }
+
+            .foot-two {
+                height: 100px;
+                width: 195px;
+                background-color: gold;
+                margin-right: 5px;
+                float: left;
+            }
+
+            .foot-three {
+                height: 100px;
+                width: 200px;
+                background-color: gold;
+                float: left;
+            }
+
+            #foot {
+                height: 35px;
+                width: 600px;
+                background-color: violet;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                float: left;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            #box {
+                height: 670px;
+                width: 400px;
+                border: 5px solid black;
+                padding: 5px;
+            }
+
+            #header {
+                height: 50px;
+                width: 400px;
+                float: left;
+            }
+
+            .left-head {
+                height: 50px;
+                width: 95px;
+                background-color: skyblue;
+                float: left;
+                margin-right: 5px;
+            }
+
+            .right-head {
+                height: 50px;
+                width: 300px;
+                background-color: gold;
+                float: left;
+            }
+
+            #middle {
+                height: 300px;
+                width: 400px;
+                background-color: tomato;
+                float: left;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            #footer {
+                height: 100px;
+                width: 400px;
+                float: left;
+            }
+
+            .foot-one {
+                height: 100px;
+                width: 400px;
+                background-color: gold;
+                margin-bottom: 5px;
+                float: left;
+            }
+
+            .foot-two {
+                height: 100px;
+                width: 400px;
+                background-color: gold;
+                margin-bottom: 5px;
+                float: left;
+            }
+
+            .foot-three {
+                height: 100px;
+                width: 400px;
+                background-color: gold;
+                margin-bottom: 5px;
+                float: left;
+            }
+
+            #foot {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:200px) {
+            #box {
+                height: 670px;
+                width: 200px;
+                border: 5px solid black;
+                padding: 5px;
+            }
+
+            #header {
+                height: 50px;
+                width: 200px;
+                float: left;
+            }
+
+            .left-head {
+                height: 50px;
+                width: 95px;
+                background-color: skyblue;
+                float: left;
+                margin-right: 5px;
+            }
+
+            .right-head {
+                height: 50px;
+                width: 100px;
+                background-color: gold;
+                float: left;
+            }
+
+            #middle {
+                height: 300px;
+                width: 200px;
+                background-color: tomato;
+                float: left;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            #footer {
+                height: 100px;
+                width: 200px;
+                float: left;
+            }
+
+            .foot-one {
+                height: 100px;
+                width: 200px;
+                background-color: gold;
+                margin-bottom: 5px;
+                float: left;
+            }
+
+            .foot-two {
+                height: 100px;
+                width: 200px;
+                background-color: gold;
+                margin-bottom: 5px;
+                float: left;
+            }
+
+            .foot-three {
+                height: 100px;
+                width: 200px;
+                background-color: gold;
+                margin-bottom: 5px;
+                float: left;
+            }
+
+            #foot {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="header">
+            <div class="left-head"></div>
+            <div class="right-head"></div>
+        </div>
+
+        <div id="middle"> </div>
+
+        <div id="footer">
+            <div class="foot-one"></div>
+            <div class="foot-two"></div>
+            <div class="foot-three"></div>
+        </div>
+
+        <div id="foot"></div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Media Query Breakpoints
+    </title>
+    <style>
+        #outer {
+            background-color: aqua;
+            height: 500px;
+            width: 900px;
+        }
+
+        .inside {
+            background-color: darkred;
+            height: 400px;
+            width: 725px;
+        }
+
+        @media only screen and (max-width:300px) {
+            #outer {
+                background-color: darkcyan;
+            }
+
+            .inside {
+                background-color: greenyellow;
+            }
+        }
+
+        @media only screen and (min-width:301px) and (max-width:499px) {
+            #outer {
+                background-color: darkkhaki;
+            }
+
+            .inside {
+                background-color: floralwhite;
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:699px) {
+            #outer {
+                background-color: darkorange;
+            }
+
+            .inside {
+                background-color: deeppink;
+            }
+        }
+
+        @media only screen and (min-width:700px) and (max-width:800px) {
+            #outer {
+                background-color: darksalmon;
+            }
+
+            .inside {
+                background-color: darkviolet;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Media Query Breakpoints.</h1>
+    <div id="outer">
+        <div class="inside"></div>
+    </div>
+</body>
+
+</html>

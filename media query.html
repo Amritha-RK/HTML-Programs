@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Exercise2_Responsive media design
+    </title>
+    <style>
+        #top {
+            background-color: lightseagreen;
+            height: 50px;
+            width: 100%;
+        }
+
+        #middle-container {
+            background-color: aqua;
+            height: 300px;
+            width: 100%;
+        }
+
+        #middle-left-container {
+            background-color: yellow;
+            height: 300px;
+            width: 60%;
+            float: left;
+        }
+
+        #middle-left-top {
+            background-color: aqua;
+            height: 150px;
+            width: 100%;
+        }
+
+        #middle-left-bottom {
+            background-color: burlywood;
+            height: 150px;
+            width: 100%;
+        }
+
+        #middle_right {
+            background-color: chartreuse;
+            height: 300px;
+            width: 40%;
+            float: right;
+        }
+
+        #bottom {
+            background-color: orange;
+            height: 50px;
+            width: 100%;
+            float: both;
+        }
+
+        @media only screen and (max-width:600px) {
+
+            #middle-left-top,
+            #middle-left-bottom,
+            #middle_right {
+                background-color: rgb(238, 149, 247);
+                width: 100%x;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top"></div>
+
+    <div id="middle-container">
+        <div id="middle-left-container">
+            <div id="middle-left-top"></div>
+            <div id="middle-left-bottom"></div>
+        </div>
+
+        <div id="middle_right"></div>
+    </div>
+
+    <div id="bottom"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form elements</title>
+    <style>
+        ol {
+            list-style-type: none;
+        }
+
+        li {
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>HTML Form Elements</h1>
+        <ol>
+            <li>
+                <!-- form element-->
+                <label for="name">Name:</label>
+
+                <!--input element-->
+                <input type="text" id="name" name="Name">
+            </li>
+
+            <li>
+                <!--Select element-->
+                <label id="lang">Programming Languages:</label>
+                <select id="lang" name="Languages">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="C">C</option>
+                    <option value="CPP">CPP</option>
+                    <option value="JAVA">JAVA</option>
+                    <option value="Python" selected>Python</option>
+                </select>
+            </li>
+
+            <li>
+                <label id="slang">Indian Languages:</label>
+                <select id="slang" name="Indian Languages" size="4">
+                    <option value="Tamil">Tamil</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Kannada">kannada</option>
+                </select>
+            </li>
+
+            <li>
+                <label id="interlang">International Languages:</label>
+                <select id="interlang" name="international Languages" multiple>
+                    <option value="English">English</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="French">French</option>
+                    <option value="Arabic">Arabic</option>
+                </select>
+            </li>
+
+            <li>
+                <!--Textarea element-->
+                <label for="feed">Feedback:</label>
+                <textarea id="feed" name="Feedback" rows="10" cols="30"></textarea>
+            </li>
+
+            <li>
+                <!--Button-->
+                <button type="button" onclick="alert('Message send')">click here</button>
+            </li>
+
+            <li>
+                <fieldset>
+
+                    <legend>Details:</legend>
+
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="FirstName">
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="LastName">
+
+                </fieldset>
+            </li>
+
+            <li>
+                <input list="fruits">
+
+                <datalist id="fruits">
+                    <option value="Apple"></option>
+                    <option value="Mango"></option>
+                    <option value="Orange"></option>
+                    <option value="Pine Apple"></option>
+                </datalist>
+            </li>
+
+        </ol>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise3_Media Query</title>
+    <style>
+        #head1 {
+            background-color: whitesmoke;
+            height: 50px;
+            width: 40%;
+            float: left;
+        }
+
+        #head2 {
+            background-color: yellow;
+            height: 50px;
+            width: 60%;
+            float: left;
+        }
+
+        #middle {
+            background-color: aquamarine;
+            height: 300px;
+            width: 100%;
+        }
+
+        #middle1 {
+            background-color: palevioletred;
+            height: 200px;
+            width: 33%;
+            float: left;
+        }
+
+        #middle2 {
+            background-color: peachpuff;
+            height: 200px;
+            width: 34%;
+            float: left;
+        }
+
+        #middle3 {
+            background-color: pink;
+            height: 200px;
+            width: 33%;
+            float: left;
+        }
+
+        #foot {
+            background-color: greenyellow;
+            height: 50px;
+            width: 100%;
+            float: left;
+        }
+
+        @media only screen and (max-width:600px) {
+
+            #middle1,
+            #middle2,
+            #middle3 {
+                height: 200px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div id="head1"></div>
+        <div id="head2"></div>
+    </div>
+
+    <div id="middle"></div>
+
+    <div>
+        <div id="middle1"></div>
+        <div id="middle2"></div>
+        <div id="middle3"></div>
+    </div>
+
+    <div id="foot"></div>
+
+</body>
+
+</html>

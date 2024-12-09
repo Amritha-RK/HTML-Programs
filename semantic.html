@@ -3,97 +3,88 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+    <title>Semantic</title>
 
-        .root {
-            height: 500px;
-            width: 600px;
-            background-color: pink;
-            padding: 20px;
-            color: white;
+    <style>
+        #box {
+            height: 560px;
+            width: 650px;
+            border: 2px solid black;
+            padding: 2px 10px;
             text-align: center;
         }
 
         header {
             height: 60px;
             width: 100%;
-            background-color: rgb(5, 170, 170);
+            border: 2px solid firebrick;
+            margin: 5px 5px 0 0;
         }
 
-        .middle {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            height: 330px;
+        nav {
+            height: 50px;
             width: 100%;
+            border: 2px solid darkblue;
+            margin: 5px 5px 0 0;
         }
 
-        aside {
-            height: 100%;
-            width: 20%;
+
+
+        #container {
+            height: 350px;
+            width: 60%;
             float: left;
-            background-color: teal;
-        }
 
-        article {
-            float: left;
-            margin-left: 10px;
-            width: 78%;
-            height: 100%;
-            background-color: rgb(244, 147, 163);
-        }
-
-        p {
-            margin-bottom: 150px;
         }
 
         section {
-            height: 120px;
-            width: 135px;
-            margin: 5px;
-            background-color: lightgray;
-            float: left;
+            height: 175px;
+            width: 100%;
+            border: 2px solid darkgreen;
+            margin: 5px 0 0 0;
         }
 
-        .one {
-            background-image: url("../Task-Images/flower-2.jpeg");
-            background-size: cover;
+        article {
+            height: 170px;
+            width: 100%;
+            border: 2px solid darkmagenta;
+            margin: 5px 0 0 0;
         }
 
-        .two {
-            background-image: url("../Task-Images/flower-3.jpeg");
-            background-size: cover;
-        }
-
-        .three {
-            background-image: url("../Task-Images/flower-1.jpeg");
-            background-size: cover;
+        aside {
+            height: 350px;
+            width: 35%;
+            border: 2px solid darkorange;
+            float: right;
+            margin: 5px 0 5px 0;
         }
 
         footer {
-            height: 50px;
-            width: 100%;
-            background-color: rgb(7, 178, 178);
+            height: 55px;
+            width: 642px;
+            border: 2px solid darkviolet;
+            float: right;
+            margin: 5px;
         }
     </style>
 </head>
 
 <body>
-    <div class="root">
+    <div id="box">
         <header>Header</header>
-        <div class="middle">
-            <aside>Aside</aside>
-            <article>
-                <p>Article</p>
-                <section class="one"></section>
-                <section class="two"></section>
-                <section class="three"></section>
-            </article>
+        <nav>Nav</nav>
+
+
+
+        <div id="container">
+            <section>Section</section>
+            <article>Article</article>
         </div>
+
+        <aside>Aside</aside>
+
 
         <footer>Footer</footer>
     </div>
