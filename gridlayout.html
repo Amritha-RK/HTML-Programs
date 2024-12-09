@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        .grid {
+            width:50%;
+            display: grid;
+            grid-template-areas:
+              'header header header header header header'
+              'aside article article article article article'
+              'footer footer footer footer footer footer';
+            gap: 10px;
+            background-color: greenyellow;
+            padding: 10px;
+          }
+
+        .child-1 {
+            grid-area: header;
+            background-color: teal;
+        }
+
+        .child-2 {
+            grid-area: aside;
+            background-color: yellow;
+        }
+
+        .child-3{
+            grid-area: article;
+            background-color: indigo;
+        }
+
+        .child-4 {
+            grid-area: footer;
+            background-color: orange;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="gird">
+        <div class="child-1">Header</div>
+        <div class="child-2">Aside</div>
+        <div class="child-3">article</div>
+        <div class="child-4">Footer</div>
+    </div>
+</body>
+
+</html>
