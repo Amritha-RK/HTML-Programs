@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query 5</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .parent {
+            box-sizing: border-box;
+            height: auto;
+            width: 700px;
+            padding: 0px 20px 20px 20px;
+            border: 2px solid black;
+        }
+
+        .header {
+            height: 50px;
+            width: 700px;
+        }
+
+        .header1 {
+            height: 50px;
+            width: 46.5%;
+            float: left;
+            background-color: orange;
+        }
+
+        .header2 {
+            height: 50px;
+            width: 46.5%;
+            float: left;
+            background-color: orange;
+            margin-left: 5px;
+        }
+
+        .green {
+            height: 290px;
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: greenyellow;
+        }
+
+        .section {
+            height: 150px;
+            width: 700px;
+        }
+
+        .one {
+            height: 100%;
+            width: 215px;
+            background-color: skyblue;
+            float: left;
+        }
+
+        .two {
+            height: 100%;
+            width: 215px;
+            background-color: skyblue;
+            float: left;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .three {
+            height: 100%;
+            width: 215px;
+            background-color: skyblue;
+            float: left;
+        }
+
+        .footer {
+            height: 195px;
+            width: 655px;
+            margin-top: 5px;
+        }
+
+        .footleft {
+            height: 195px;
+            width: 49.63%;
+            margin-right: 5px;
+            float: left;
+        }
+
+        .f1 {
+            height: 195px;
+            width: 48.4%;
+            float: left;
+            background-color: lightgrey;
+            margin-right: 5px;
+        }
+
+        .f2 {
+            height: 195px;
+            width: 50%;
+            float: left;
+            background-color: lightgrey;
+        }
+
+        .footright {
+            height: 195px;
+            width: 49.6%;
+            float: left;
+        }
+
+        .f3 {
+            height: 195px;
+            width: 48.4%;
+            float: left;
+            background-color: lightgrey;
+            margin-right: 5px;
+        }
+
+        .f4 {
+            height: 195px;
+            width: 50%;
+            float: left;
+            background-color: lightgrey;
+        }
+
+        @media only screen and (max-width:668px) {
+
+            .parent {
+                width: 668px;
+                height: auto;
+            }
+
+            .header {
+                height: 100px;
+                width: 100%;
+            }
+
+            .header1 {
+                height: 47.5px;
+                width: 100%;
+                background-color: orange;
+                margin-bottom: 5px;
+            }
+
+            .header2 {
+                height: 47.5px;
+                width: 100%;
+                background-color: orange;
+                margin-left: 0px;
+            }
+
+            .green {
+                height: 200px;
+                width: 100%;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                background-color: greenyellow;
+            }
+
+            .section {
+                height: 360px;
+                width: 100%;
+            }
+
+            .one {
+                height: 117px;
+                width: 100%;
+                background-color: skyblue;
+                margin-bottom: 5px;
+            }
+
+            .two {
+                height: 117px;
+                width: 100%;
+                background-color: skyblue;
+                margin-left: 0px;
+                margin-right: 0px;
+
+            }
+
+            .three {
+                height: 117px;
+                width: 100%;
+                background-color: skyblue;
+                margin-top: 5px;
+            }
+
+            .footer {
+                height: 245px;
+                width: 100%;
+                margin-top: 5px;
+            }
+
+            .footleft {
+                height: 245px;
+                width: 49.54%;
+                margin-right: 5px;
+                float: left;
+            }
+
+            .f1 {
+                height: 48.3%;
+                width: 100%;
+                background-color: lightgray;
+                margin-bottom: 5px;
+            }
+
+            .f2 {
+                height: 50%;
+                width: 100%;
+                background-color: lightgray;
+            }
+
+            .footright {
+                height: 245px;
+                width: 49.6%;
+                float: left;
+            }
+
+            .f3 {
+                height: 48.3%;
+                width: 100%;
+                background-color: lightgray;
+                margin-bottom: 5px;
+            }
+
+            .f4 {
+                height: 50%;
+                width: 100%;
+                background-color: lightgray;
+            }
+        }
+
+        @media only screen and (max-width:320px) {
+            .parent {
+                width: 320px;
+                height: auto;
+            }
+
+            .header {
+                height: 100px;
+                width: 100%;
+            }
+
+            .header1 {
+                height: 47.5px;
+                width: 100%;
+                background-color: orange;
+                margin-bottom: 5px;
+            }
+
+            .header2 {
+                height: 47.5px;
+                width: 100%;
+                background-color: orange;
+                margin-left: 0px;
+            }
+
+            .green {
+                height: 100px;
+                width: 100%;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                background-color: greenyellow;
+            }
+
+            .section {
+                height: 600px;
+                width: 100%;
+            }
+
+            .one {
+                height: 197px;
+                width: 100%;
+                background-color: skyblue;
+                margin-bottom: 5px;
+            }
+
+            .two {
+                height: 197px;
+                width: 100%;
+                background-color: skyblue;
+                margin-left: 0px;
+                margin-right: 0px;
+
+            }
+
+            .three {
+                height: 197px;
+                width: 100%;
+                background-color: skyblue;
+                margin-top: 5px;
+            }
+
+            .footer {
+                height: 100px;
+                width: 100%;
+                margin-top: 5px;
+                background-color: lightgrey;
+            }
+
+
+            .footleft,
+            .f1,
+            .f2,
+            .footright,
+            .f3,
+            .f4 {
+                display: none;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="header">
+            <div class="header1"></div>
+            <div class="header2"></div>
+        </div>
+
+        <div class="green"></div>
+
+        <div class="section">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+
+        <div class="footer">
+            <div class="footleft">
+                <div class="f1"></div>
+                <div class="f2"></div>
+            </div>
+            <div class="footright">
+                <div class="f3"></div>
+                <div class="f4"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

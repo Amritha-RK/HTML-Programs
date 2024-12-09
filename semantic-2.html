@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .root {
+            height: 620px;
+            width: 1000px;
+            border: 5px solid red;
+            padding: 15px;
+        }
+
+        header {
+            height: 100px;
+            width: 100%;
+            border: 2px solid purple;
+            background-color: aqua;
+        }
+
+        nav {
+            width: 80%;
+            background-color: plum;
+            margin: auto;
+            padding-bottom: 20px;
+        }
+
+        .middle {
+            height: 400px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        section {
+            height: 400px;
+            width: 60%;
+            background-color: rgb(128, 218, 248);
+            float: left;
+            border: 2px solid rgb(1, 14, 19);
+        }
+
+        article{
+            background-color: hotpink;
+            width: 97%;
+            height: 114px;
+            margin: 10px;
+        }
+
+        aside{
+            height: 400px;
+            width: 38.9%;
+            background-color: orange;
+            float: left;
+            margin-left: 10px;
+            border: 2px solid orangered;
+        }
+
+        footer{
+            margin-top: 10px;
+            background-color: violet;
+            border: 2px solid blue;
+            height: 62px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <header>Header
+            <nav>Nav</nav>
+        </header>
+
+        <div class="middle">
+            <section>Section
+                <article>Article One</article>
+                <article>Article Two</article>
+                <article>Article Three</article>
+            </section>
+
+            <aside>Aside</aside>
+        </div>
+
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

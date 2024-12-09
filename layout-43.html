@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>div Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #box {
+            height: 500px;
+            width: 1200px;
+            background-color: lightgreen;
+            text-align: center;
+        }
+
+        #header {
+            height: 50px;
+            width: 100%;
+            border: 4px solid darkblue;
+            background-color: rgb(115, 115, 238);
+        }
+
+        #path {
+            height: 70px;
+            width: 100%;
+            border: 4px solid hotpink;
+            background-color: pink;
+        }
+
+        #doc-top {
+            height: 50px;
+            width: 100%;
+            border: 4px solid goldenrod;
+            background-color: rgb(241, 241, 129);
+        }
+
+        #doc-left {
+            height: 330px;
+            width: 30%;
+            border: 4px solid red;
+            background-color: rgb(223, 126, 126);
+            float: left;
+        }
+
+        #middle {
+            height: 330px;
+            width: 40%;
+            background-color: aqua;
+            float: left;
+        }
+
+        #error {
+            height: 30px;
+            width: 100%;
+            border: 4px solid darkviolet;
+            background-color: violet;
+        }
+
+        #content {
+            height: 300px;
+            width: 100%;
+            border: 4px solid black;
+            background-color: rgb(172, 170, 170);
+        }
+
+        #doc-right {
+            height: 330px;
+            width: 30%;
+            border: 4px solid green;
+            background-color: lightgreen;
+            float: left;
+        }
+
+        #doc-bottom {
+            height: 50px;
+            width: 100%;
+            border: 4px solid rgb(4, 129, 129);
+            background-color: lightblue;
+            float: left;
+        }
+
+        #footer {
+            height: 50px;
+            width: 100%;
+            border: 4px solid orange;
+            background-color: rgb(253, 199, 99);
+            float: left;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="header">HEADER</div>
+        <div id="path">PATH</div>
+        <div id="doc-top">DOCK-TOP</div>
+
+        <div id="doc-left">DOCK-LEFT</div>
+
+        <div id="middle">
+            <div id="error">ERROR</div>
+            <div id="content">CONTENT
+            </div>
+        </div>
+
+        <div id="doc-right">DOCK-RIGHT</div>
+
+        <div id="doc-bottom">DOCK-BOTTOM</div>
+        <div id="footer">FOOTER</div>
+    </div>
+
+   
+</body>
+
+</html>

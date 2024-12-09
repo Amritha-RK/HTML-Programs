@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Layout with 3 Images
+    </title>
+    <style>
+        #outer {
+            height: 600px;
+            width: 800px;
+            border: 1px solid rgb(187, 184, 184);
+        }
+
+        #top {
+            height: 300px;
+            width: 800px;
+        }
+
+        #left {
+            height: 300px;
+            width: 400px;
+            background-color: aqua;
+            float: left;
+            text-align: center;
+        }
+
+        #right {
+            height: 300px;
+            width: 400px;
+            background-color: peachpuff;
+            float: right;
+            text-align: center;
+        }
+
+        #bottom {
+            height: 300px;
+            width: 800px;
+            background-color: palegreen;
+            text-align: center;
+        }
+
+        .iron {
+            margin-top: 30px;
+            height: 200px;
+            width: 300px;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+
+        <div id="top">
+            <div id="left">
+                <img src="../Task-Images/html.jpg"
+                <h2>HTML</h2>
+            </div>
+
+            <div id="right">
+                <img src="../Task-Images/css.jpg" alt="CSS" class="iron">
+                <h2>CSS</h2>
+            </div>
+        </div>
+
+        <div id="bottom">
+            <img src="../Task-Images/js.png" alt="Js" class="iron"
+                style="background-color: rgb(232, 232, 232);">
+            <h2>JavaScript</h2>
+        </div>
+
+    </div>
+</body>
+
+</html>

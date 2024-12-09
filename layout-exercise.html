@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout-Exercise</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #parent {
+        width: 800px;
+        height: 600px;
+        background-color: darkblue;
+        padding: 10px;
+      }
+
+      #headerOne {
+        width: 100%;
+        height: 50px;
+        background-color: yellow;
+        margin-bottom: 5px;
+      }
+
+      #headerTwo {
+        width: 100%;
+        height: 50px;
+        background-color: yellowgreen;
+        margin-bottom: 5px;
+      }
+
+      #last {
+      }
+
+      #left {
+        float: left;
+        margin-right: 5px;
+        width: 59.3%;
+        height: 470px;
+        background-color: red;
+      }
+
+      .white {
+        height: 150px;
+        background-color: white;
+        width: 98%;
+        margin: 5px;
+      }
+
+      .blue {
+        float: left;
+        background-color: blue;
+        height: 140px;
+        width: 57%;
+        margin: 5px;
+      }
+
+      .black {
+        float: left;
+        background-color: black;
+        height: 140px;
+        width: 39.7%;
+        margin-top: 5px;
+      }
+
+      #right {
+        float: left;
+        width: 40%;
+        height: 360px;
+        background-color: aqua;
+      }
+
+      .orange {
+        margin: 5px;
+        width: 97%;
+        height: 113px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="headerOne"></div>
+      <div id="headerTwo"></div>
+
+      <div id="last">
+        <div id="left">
+          <div class="white">
+            <div class="blue"></div>
+            <div class="black"></div>
+          </div>
+          <div class="white">
+            <div class="blue"></div>
+            <div class="black"></div>
+          </div>
+          <div class="white">
+            <div class="blue"></div>
+            <div class="black"></div>
+          </div>
+        </div>
+        <div id="right">
+          <div class="orange"></div>
+          <div class="orange"></div>
+          <div class="orange"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

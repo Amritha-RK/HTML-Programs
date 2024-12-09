@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe with Layout</title>
+    <style>
+        .parent{
+            height: 400px;
+            width: 850px;
+            border: 1px solid black;
+            padding-left: 5px;
+        }
+
+        iframe{
+            height: 300px;
+            width: 412px;
+        }
+
+        .left{
+            height: 400px;
+            width: 420px;
+            margin-right: 10px;
+            float: left;
+            border-right: 1px solid black;
+        }
+
+        .right{
+            height: 400px;
+            width: 419px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Video Iframe</h1>
+    <div class="parent">
+        <div class="left">
+            <h2>Iframe 1</h2>
+            <iframe src="https://www.youtube.com/embed/v64KOxKVLVg?si=My44GedZupqd3hVs" title="video1"></iframe>
+        </div>
+
+        <div class="right">
+            <h2>Iframe 2</h2>
+            <iframe src="https://www.youtube.com/embed/rG4jSz_2HDY?si=GshMgo9tZA3wusLy" title="video2"></iframe>
+
+        </div>
+    </div>
+</body>
+
+</html>

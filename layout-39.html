@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Layout 
+    </title>
+    <style>
+        #main {
+            height: 550px;
+            width: 600px;
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        #top {
+            background-color: cyan;
+            height: 100px;
+            width: 596px;
+            border: 2px solid black;
+            border-bottom: none;
+        }
+
+        #middle {
+            height: 350px;
+            width: 600px;
+        }
+
+        #left {
+            height: 346px;
+            width: 98px;
+            background-color: gray;
+            float: left;
+            border: 2px solid black;
+
+        }
+
+        #center {
+            height: 346px;
+            width: 396px;
+            background-color: white;
+            border: 2px solid black;
+            float: left;
+            border-right: none;
+            border-left: none;
+        }
+
+        #right {
+            height: 346px;
+            width: 98px;
+            background-color: sandybrown;
+            border: 2px solid black;
+            float: right;
+        }
+
+        #bottom {
+            height: 100px;
+            width: 596px;
+            background-color: greenyellow;
+            border: 2px solid black;
+            border-top: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="top">HEAD</div>
+        <div id="middle">
+            <div id="left">LEFT</div>
+            <div id="center">BODY</div>
+            <div id="right">RIGHT</div>
+        </div>
+        <div id="bottom">FOOT</div>
+    </div>
+</body>
+
+</html>

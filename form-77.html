@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            background-color: gold;
+            padding: 10px;
+            width: 600px;
+            margin: auto;
+        }
+
+        ol li {
+            list-style-type: none;
+            margin-bottom: 15px;
+        }
+
+        span {
+            color: red;
+        }
+
+        .label {
+            display: inline-block;
+            width: 150px;
+        }
+
+        .input {
+            width: 250px;
+        }
+
+        .align {
+            margin-left: 158px;
+        }
+
+        .submit {
+            background-color: rgb(255, 6, 6);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h2>PLEASE FILL THE BOXES BELOW</h2>
+        <hr>
+        <ol>
+            <li>
+                <label class="label" for="">Full Name<span> *</span></label>
+                <input class="input" type="text" name="" id="" placeholder="Full Name">
+            </li>
+
+            <li>
+                <label class="label" for="">E-mail <span>*</span></label>
+                <input class="input" type="email" name="" id="" placeholder="ex:myname@exapmple.com">
+            </li>
+
+            <li>
+                <label class="label" for="">Recipient Phone Number <span>*</span></label>
+
+                <input class="input" type="number" name="" id="" placeholder="mobile number">
+            </li>
+
+            <li>
+                <label class="label" for="">Preference <span>* </span></label>
+
+                <input type="checkbox" name="" id="">
+                <label for="">Exchange my current cylinder with a prefilled cylinder</label>
+                <br>
+                <input class="align" type="checkbox" name="" id="">
+                <label for="">Pick my cylinder, refill and return it to my location</label>
+
+            </li>
+
+            <li>
+                <label for="" class="label">My cylinder size is <span>*</span></label>
+
+                <input list="browsers" class="input">
+                <datalist id="browsers">
+                    <option value="10l">
+                    <option value="500l">
+                </datalist>
+            </li>
+
+            <li>
+                <label for="" class="label">Quantity Required <span>*</span></label>
+                <input type="text" class="input">
+            </li>
+
+            <li>
+                <label for="" class="label">Amount Due</label>
+                <input type="text" class="input">
+            </li>
+
+            <li>
+                <label for="" class="label"> Delivery Address (please include nearest landmarks)<span>*</span></label>
+
+                <textarea cols="40" rows="5"></textarea>
+            </li>
+
+            <li>
+                <input type="submit" value="Place Order" class="submit">
+            </li>
+        </ol>
+
+
+    </form>
+</body>
+
+</html>

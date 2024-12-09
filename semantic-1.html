@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements</title>
+
+    <style>
+        * {
+            text-align: center;
+        }
+
+        .root {
+            height: auto;
+            width: 600px;
+            border: 5px solid black;
+        }
+
+        header {
+            background-color: burlywood;
+            height: 70px;
+            width: 600px;
+        }
+
+        nav {
+            height: 50px;
+            width: 600px;
+            background-color: brown;
+        }
+
+        .middle {
+            height: 400px;
+            width: 600px;
+        }
+
+        .left {
+            height: 400px;
+            width: 400px;
+            float: left;
+        }
+
+        section {
+            height: 200px;
+            width: 400px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        article {
+            height: 200px;
+            width: 400px;
+            background-color: lawngreen;
+        }
+
+        aside {
+            height: 400px;
+            width: 200px;
+            background-color: yellow;
+            float: left;
+        }
+
+        footer{
+            height: 30px;
+            width: 600px;
+            background-color: deepskyblue;
+        }
+
+        span{
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <header><span>Header</span></header>
+        <nav><span>Nav</span></nav>
+        <div class="middle">
+            <div class="left">
+                <section><span>Section</span></section>
+                <article><span>Article</span></article>
+            </div>
+            <aside><span>Aside</span></aside>
+        </div>
+        <footer><span>Footer</span></footer>
+    </div>
+</body>
+
+</html>

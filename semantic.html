@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .root {
+            height: 500px;
+            width: 600px;
+            background-color: pink;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            height: 60px;
+            width: 100%;
+            background-color: rgb(5, 170, 170);
+        }
+
+        .middle {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 330px;
+            width: 100%;
+        }
+
+        aside {
+            height: 100%;
+            width: 20%;
+            float: left;
+            background-color: teal;
+        }
+
+        article {
+            float: left;
+            margin-left: 10px;
+            width: 78%;
+            height: 100%;
+            background-color: rgb(244, 147, 163);
+        }
+
+        p {
+            margin-bottom: 150px;
+        }
+
+        section {
+            height: 120px;
+            width: 135px;
+            margin: 5px;
+            background-color: lightgray;
+            float: left;
+        }
+
+        .one {
+            background-image: url("../Task-Images/flower-2.jpeg");
+            background-size: cover;
+        }
+
+        .two {
+            background-image: url("../Task-Images/flower-3.jpeg");
+            background-size: cover;
+        }
+
+        .three {
+            background-image: url("../Task-Images/flower-1.jpeg");
+            background-size: cover;
+        }
+
+        footer {
+            height: 50px;
+            width: 100%;
+            background-color: rgb(7, 178, 178);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <header>Header</header>
+        <div class="middle">
+            <aside>Aside</aside>
+            <article>
+                <p>Article</p>
+                <section class="one"></section>
+                <section class="two"></section>
+                <section class="three"></section>
+            </article>
+        </div>
+
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

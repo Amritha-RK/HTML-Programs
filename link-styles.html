@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Styles</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        a:link {
+            color: darkgoldenrod;
+        }
+
+        a:visited {
+            color: fuchsia;
+        }
+
+        a:active {
+            color: brown;
+        }
+
+        a:hover {
+            background-color: lightgoldenrodyellow;
+        }
+
+        #active {
+            color: brown;
+        }
+
+        #mouse {
+            color: darkgoldenrod;
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Different Link States</h1>
+    <ul>
+        <li>An <a href="#1">Unvisited Link</a></li>
+        <li>A <a href="#2">Visited Link</a></li>
+        <!--<li>An <a href="#3">Active Link</a></li>
+        <li>An <a href="#4">Mouse over Link</a></li>-->
+        <li>An <u id="active">Active Link</u></li>
+        <li>An <u id="mouse">Mouse over Link</u></li>
+    </ul>
+</body>
+
+</html>

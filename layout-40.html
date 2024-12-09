@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Div Layout</title>
+    <style>
+        #box {
+            height: 510px;
+            width: 700px;
+            /*  border: 2px solid black;
+             padding: 5px; */
+            text-align: center;
+        }
+
+        #head {
+            height: 100px;
+            width: 100%;
+            background-color: red;
+            margin-bottom: 5px;
+        }
+
+        #middle {
+            height: 300px;
+            width: 700px;
+        }
+
+        #nav {
+            height: 300px;
+            width: 25%;
+            background-color: indigo;
+            float: left;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: aliceblue;
+        }
+
+        #center {
+            height: 300px;
+            width: 50%;
+            background-color: yellow;
+            float: left;
+            margin-bottom: 5px;
+
+        }
+
+        #aside {
+            height: 200px;
+            width: 23.55%;
+            background-color: chartreuse;
+            float: left;
+            margin-bottom: 5px;
+            margin-left: 5px;
+
+        }
+
+        #aside-1 {
+            height: 96px;
+            width: 24.2%;
+            background-color: yellow;
+            float: left;
+            border-left: none;
+
+        }
+
+        #foot {
+            height: 100px;
+            width: 100%;
+            background-color: blue;
+            float: left;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div id="head">Header</div>
+        <div id="middle">
+            <div id="nav">Nav</div>
+            <div id="center">Section</div>
+            <div id="aside">Aside</div>
+            <div id="aside-1"></div>
+        </div>
+        <div id="foot">Footer</div>
+    </div>
+
+</body>
+
+</html>

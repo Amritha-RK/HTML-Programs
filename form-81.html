@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <style>
+        form {
+            background-color: lawngreen;
+            width: 500px;
+            margin: auto;
+            padding: 0px 10px 10px 10px;
+            box-sizing: border-box;
+            border: 5px solid firebrick;
+        }
+
+        h2 {
+            color: firebrick;
+        }
+
+        table {
+            border-spacing: 15px;
+        }
+
+        .submit{
+            color: white;
+            font-weight: bolder;
+            padding: 10px;
+            width: 150px;
+            background-color: firebrick;
+            border: 2px solid lawngreen;
+            margin-left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <h2>Personal Details</h2>
+
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="mail">E-mail address</label></td>
+                <td><input type="email" name="mail" id="mail"></td>
+            </tr>
+
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" name="pass" id="pass"></td>
+            </tr>
+
+            <tr>
+                <td><label for="gen">Gender</label></td>
+                <td><input type="radio" name="gen" id="male"><label for="male">Male</label>
+                    <input type="radio" name="gen" id="fmale"><label for="fmale">Female</label>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Educational Qualification</h2>
+        <table>
+            <tr>
+                <td><label for="degree">Degree</label></td>
+
+                <td>
+                    <select id="degree" name="degree">
+                        <option value="select group">Select Group</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="branch">Branch</label></td>
+
+                <td>
+                    <select id="branch" name="branch">
+                        <option value="select branch">Select Branch</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="hobbies">Hobbies</label></td>
+                <td><input type="text" name="hobbies" id="hobbies"></td>
+            </tr>
+        </table>
+
+        <h2>Address</h2>
+
+        <textarea name="" id="" cols="30" rows="9"></textarea></td>
+
+        <table>
+            <tr>
+                <td><label for="file">Attach File</label></td>
+
+                <td><input type="file" name="file" id="file"></td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Submit" class="submit">
+    </form>
+</body>
+
+</html>

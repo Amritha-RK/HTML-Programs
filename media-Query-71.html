@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout with media query</title>
+    <style>
+        .parent {
+            margin: 10px;
+            height: 550px;
+            width: 800px;
+            color: white;
+            text-align: center;
+        }
+
+        .header {
+            background-color: red;
+            height: 95px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+
+        .middle {
+            height: 350px;
+            width: 800px;
+        }
+
+        .left {
+            height: 100%;
+            width: 150px;
+            background-color: green;
+            border-radius: 10px;
+            float: left;
+        }
+
+        p {
+            color: black;
+        }
+
+        .center {
+            height: 100%;
+            width: 490px;
+            margin-left: 5px;
+            margin-right: 5px;
+            background-color: yellow;
+            border-radius: 10px;
+            float: left;
+        }
+
+        .right {
+            height: 100%;
+            width: 150px;
+            background-color: hotpink;
+            border-radius: 10px;
+            float: left;
+        }
+
+        .footer {
+            margin-top: 5px;
+            height: 95px;
+            width: 100%;
+            background-color: blue;
+            border-radius: 10px;
+        }
+
+        @media only screen and (max-width:500px) {
+            .left {
+                width: 100%;
+                height: 20px;
+                border-radius: 5px;
+            }
+
+            .center {
+                height: 300px;
+                width: 100%;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            .right {
+                width: 100%;
+                height: 20px;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="header">Header</div>
+        <div class="middle">
+            <div class="left">Left Section</div>
+            <div class="center">
+                <p>Flower, the characteristic reproductive structure of angiosperms. As popularly used, the term
+                    “flower” especially
+                    applies when part or all of the reproductive structure is distinctive in colour and form.
+                    In their range of colour, size, form, and anatomical arrangement, flowers present a seemingly
+                    endless variety of
+                    combinations. They range in size from minute blossoms to giant blooms. In some plants, such as
+                    poppy, magnolia, tulip,
+                    and petunia, each flower is relatively large and showy and is produced singly, while in other
+                    plants, such as aster,
+                    snapdragon, and lilac, the individual flowers may be very small and are borne in a distinctive
+                    cluster known as an
+                    inflorescence. </p>
+            </div>
+            <div class="right">Right Section</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>
